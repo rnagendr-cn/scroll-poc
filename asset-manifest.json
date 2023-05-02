@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.js": "/scroll-poc/static/js/main.8ff5b39d.js",
+    "static/media/Garamondpro-regular.woff": "/scroll-poc/static/media/Garamondpro-regular.7bd2d5c0a1b6f02b7446.woff",
+    "static/media/FBDidotS-Regular.woff": "/scroll-poc/static/media/FBDidotS-Regular.e75b386efc2a8093f6fc.woff",
+    "static/media/VogueAvantGarde-Bold.otf": "/scroll-poc/static/media/VogueAvantGarde-Bold.1f66dc2b9c136df91da9.otf",
+    "static/media/VogueAvantGarde-DemiBold.otf": "/scroll-poc/static/media/VogueAvantGarde-DemiBold.d57228e5460af3fa86d7.otf",
+    "static/media/VogueAvantGarde-Medium.otf": "/scroll-poc/static/media/VogueAvantGarde-Medium.b8e2336701d55654d296.otf",
+    "static/media/VogueAvantGarde-Book.otf": "/scroll-poc/static/media/VogueAvantGarde-Book.072cb7f13a7a2d0be141.otf",
+    "index.html": "/scroll-poc/index.html",
+    "main.8ff5b39d.js.map": "/scroll-poc/static/js/main.8ff5b39d.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.8ff5b39d.js"
+  ]
+}
