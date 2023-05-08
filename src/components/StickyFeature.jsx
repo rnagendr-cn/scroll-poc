@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 import withStyles from "react-jss"
 
 const styles = {
@@ -64,6 +64,26 @@ const IMG_SRC =
 const StickyFeature = ({ classes, id }) => {
   // if (!id) return ""
 
+  const ref = useRef()
+  useEffect(() => {
+    function onResize() {
+      if (!ref.current) return
+      const height = ref.current.offsetHeight
+      const data = {
+        height,
+        type: "embed-size",
+      }
+
+      if (window.parent) {
+        window.parent.postMessage(data, "*")
+      }
+    }
+    window.addEventListener("resize", onResize)
+    return () => {
+      window.removeEventListener("resize", onResize)
+    }
+  }, [])
+
   const [state, setState] = useState(false)
   const [opacity, setOpacity] = useState(0)
 
@@ -95,7 +115,7 @@ const StickyFeature = ({ classes, id }) => {
   return (
     <article className={classes.container}>
       <div className={classes.sticky}>
-        <figure className={classes.figure}>
+        <figure className={classes.figure} ref={ref}>
           <img
             className={classes.img}
             src={IMG_SRC}
