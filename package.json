@@ -1,6 +1,7 @@
 {
   "name": "editorial-data-viz-template",
   "version": "1.0.0",
+  "homepage": "https://rnagendr-cn.github.io/scroll-poc",
   "main": "index.js",
   "private": true,
   "dependencies": {
@@ -17,8 +18,10 @@
     "react-scripts": "5.0.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
-    "build": "react-scripts build && npm run overrider",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "prepare": "husky install",
@@ -44,6 +47,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^5.0.0",
     "husky": "^8.0.3",
     "plop": "^3.1.2",
     "prettier": "^2.8.7",
