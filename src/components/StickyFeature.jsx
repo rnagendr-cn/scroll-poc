@@ -69,6 +69,7 @@ const StickyFeature = ({ classes, id }) => {
     function onResize() {
       if (!ref.current) return
       const height = ref.current.offsetHeight
+      console.log(height)
       const data = {
         height,
         type: "embed-size",
